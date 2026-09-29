@@ -1,0 +1,22 @@
+<!doctype html>
+<html lang="zh-CN"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Jackie YouTube Comment Copilot 隐私说明</title>
+<style>body{max-width:850px;margin:40px auto;padding:0 22px;font:18px/1.7 system-ui;color:#183329;background:#faf8f2}a{color:#116149}</style>
+<body>
+<h1>Jackie YouTube Comment Copilot 隐私说明</h1>
+<p>版本：2026-09-23-v1。适用于 Jackie 本人管理自己频道的本地单用户工具。</p>
+<p>本工具使用 YouTube API Services。使用时须遵守 <a href="https://www.youtube.com/t/terms" rel="noopener">YouTube 服务条款</a>。Google 对数据的处理见 <a href="https://policies.google.com/privacy" rel="noopener">Google 隐私政策</a>。使用 API 功能前，需要明确点击“同意并继续”；用途变化后需重新同意。</p>
+<h2>数据与用途</h2>
+<p>本机 SQLite 保存授权频道 ID/名称、视频 ID/标题、评论与 thread ID、评论正文、作者名称/频道 ID、发布时间/更新时间、点赞及回复数量、可回复性、API 响应、已存在回复，以及同步时间。它们用于按时间展示本人频道评论、核对目标及防止错误或重复回复。OAuth token 单独保存在本机受保护的 `.secrets`，不显示在浏览器或报告中。</p>
+<p>Policy-safe 模式不运行或新增评论分类、情绪/立场、观众画像、机会评分、优先级或派生排名。历史研究数据不参与正常审阅或发送；切换前须另行处理已有副本和历史数据。</p>
+<p>仅在你选择评论并请求建议时，系统提供通用、可编辑的致谢草稿。它不是模型针对事实问题的回答，也不保证适合每条评论。此模式不调用外部模型、不把评论送去训练、不售卖数据、不投放广告。公开回复的最终文字、人工决策和发送状态保存在本机，供核对和防双发。只有你本人点击“确认发送到 YouTube”才可能发布；建议、保存、刷新和同步均不发送。也可以不回复。</p>
+<h2>本机存储与期限</h2>
+<p>原始 API 数据自实际读取之日起最多保存 30 天；正常同步前执行有界过期删除。页面不展示过期评论，发送前重新读取并检查当前内容。token 有效不等于评论已刷新。与评论有关的过期草稿、原始响应、旧分析和决策也会清理；已有发送记录到期后仅保留不可用于授权发送的阻止标记，避免删除记录意外允许重发。</p>
+<p>浏览器会话存储只暂存你编辑的回复，最长 24 小时且在评论数据到期前失效；不存 token。请关闭旧标签页、清理浏览器会话存储以移除旧草稿。应用不自动扫描或删除其他目录。已有导出、截图、日志、备份和手工副本须由操作者按同一期限处理；本机数据库删除不代表外部副本已删除。设备关闭时不运行维护，因此长时间停用前应执行本地删除并处理副本，不得把超期副本重新导入。</p>
+<h2>撤销与删除</h2>
+<p>可以使用应用的“撤销 YouTube 授权”操作，确认后向 Google 撤销授权、阻止继续访问并删除本机数据库中的 YouTube 数据。Google 撤销可能影响同一 Google Cloud 项目下其他 OAuth 客户端和所有已授权 scope；请先确认影响范围。也可通过 <a href="https://myaccount.google.com/permissions" rel="noopener">Google 账号的第三方连接管理</a> 撤销。</p>
+<p>应用内撤销或用户删除请求应尽快完成，最迟 7 天内完成有关数据及副本的删除；Google 侧撤销后的数据最迟 30 天内删除。发现授权失效后停止 API/审阅功能并进入删除流程。网络失败不会被报告为撤销成功；在核实前仍阻止访问。应用没有无人值守后台守护程序，外部副本删除由操作者负责并核验。</p>
+<p>独立的“删除本地 YouTube 数据”需要确认，不撤销 Google 授权、不删除 token，也不会删除 YouTube 网站上的评论/回复。删除会丢失核对证据，因此正常发送保持关闭，不能借删除解除未知发送结果保护。撤销成功后本机 token 会移除；此操作绝不调用 YouTube 内容删除接口。</p>
+<h2>联系方式与发布状态</h2>
+<p>当前操作者及维护责任人：Jackie。隐私联系邮箱：<a href="mailto:xiejiaqi_cn@hotmail.com">xiejiaqi_cn@hotmail.com</a>。隐私说明网址：<a href="https://jackiexie123.github.io/jackie-youtube-comment-copilot-privacy/">https://jackiexie123.github.io/jackie-youtube-comment-copilot-privacy/</a>。本文件是待发布的本地隐私说明，不代表已经公开发布或通过 Google 审核。正常产品激活前必须补齐有效联系方法、发布可访问页面、完成历史副本处置并明确同意。</p>
+</body></html>
