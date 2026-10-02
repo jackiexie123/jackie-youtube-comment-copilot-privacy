@@ -28,4 +28,4 @@ Policy-safe 模式不运行或新增评论分类、情绪/立场、观众画像�
 
 ## 联系方式与发布状态
 
-当前操作者及维护责任人：Jackie。隐私联系邮箱：xiejiaqi_cn@hotmail.com。隐私说明网址：https://jackiexie123.github.io/jackie-youtube-comment-copilot-privacy/。本文件是待发布的本地隐私说明，不代表已经公开发布或通过 Google 审核。正常产品激活前必须补齐有效联系方法、发布可访问页面、完成历史副本处置并明确同意。
+当前操作者及维护责任人：Jackie。隐私联系邮箱：[xiejiaqi_cn@hotmail.com](mailto:xiejiaqi_cn@hotmail.com)。当前公开隐私说明网址：[https://jackiexie123.github.io/jackie-youtube-comment-copilot-privacy/](https://jackiexie123.github.io/jackie-youtube-comment-copilot-privacy/)。本隐私说明已公开发布；公开发布不代表 Google 已审核、认证、批准或认可本工具。正常功能仍须遵守当前隐私同意、数据生命周期、OAuth 授权状态、Human-click Safety gate 及其他既有 policy-safe runtime gate。
